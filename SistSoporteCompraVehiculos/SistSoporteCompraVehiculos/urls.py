@@ -1,10 +1,12 @@
-from django.conf.urls.defaults import patterns, include, url
+from django.conf.urls.defaults import patterns, url
+import Autos.views as cars_views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+                       url(r'^addCar.html', cars_views.add_car),
     # Examples:
     # url(r'^$', 'SistSoporteCompraVehiculos.views.home', name='home'),
     # url(r'^SistSoporteCompraVehiculos/', include('SistSoporteCompraVehiculos.foo.urls')),
