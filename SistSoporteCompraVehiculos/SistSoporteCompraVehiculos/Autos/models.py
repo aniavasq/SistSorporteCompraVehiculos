@@ -32,6 +32,9 @@ class Automotor(models.Model):
     seguridad = models.TextField(null=True, blank=True, max_length=150)
     potencia = models.IntegerField(null=True, blank=True)
     
+    def __unicode__(self):
+        return self.marca.__str__()+" "+self.modelo.__str__()
+    
 class Financiamiento(models.Model):
     id_financiamiento = models.AutoField(primary_key=True)
     id_auto = models.ForeignKey(Automotor)

@@ -7,6 +7,7 @@ import Autos.views as cars_views
 
 urlpatterns = patterns('',
                        url(r'^addCar.html', cars_views.add_car),
+                       url(r'^getCars.html', cars_views.get_cars),
     # Examples:
     # url(r'^$', 'SistSoporteCompraVehiculos.views.home', name='home'),
     # url(r'^SistSoporteCompraVehiculos/', include('SistSoporteCompraVehiculos.foo.urls')),
